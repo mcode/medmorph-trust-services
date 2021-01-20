@@ -1,0 +1,22 @@
+name: Lint and Test
+
+on: [push, pull_request]
+
+jobs:
+  verify:
+    name: Run Lint and Tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - run: yarn install
+
+    - run: yarn lint
+
+    - run: yarn test
+      env:
+        CI: true
