@@ -16,8 +16,8 @@ The Backend Service Client is provided as a NodeJS Express app. NodeJS is requir
 ```sh
 git clone https://github.com/mcode/medmorph-trust-services
 cd medmorph-trust-services
-yarn install
-yarn start
+npm install
+npm start
 ```
 
 With default settings, the app will now be running at `http://localhost:3005`
