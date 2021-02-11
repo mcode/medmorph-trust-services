@@ -12,6 +12,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(bodyParser.json({ type: ['application/json', 'application/fhir+json'] }));
 
-app.use('/', indexRouter);
+app.use('/Bundle', indexRouter);
 
 module.exports = app;
