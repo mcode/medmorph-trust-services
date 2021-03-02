@@ -22,6 +22,15 @@ npm start
 
 With default settings, the app will now be running at `http://localhost:3005`
 
+The client can also be run using Docker.  Ensure docker is installed and running, then run the following commands.
+
+```sh
+./build-docker-image.bat
+docker-compose up
+```
+
+The app will now be running at `http:localhost:3005`
+
 Certain configuration properties may be set in an environment file, `.env`:
 
 ```env
